@@ -1,0 +1,19 @@
+$color-veg: #09a66d;
+$color-text: #555555;
+$color-title: #222222;
+$color-bg-salat: #f3fbf8;
+
+%title-second {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  color: $color-title;
+}
+
+%title-font {
+  font-family: 'Rosario';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 90px;
+  color: $color-title;
+}

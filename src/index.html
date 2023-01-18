@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      @include('partials/header.html')
+      <main class="main">
+        <section class="firstscreen">
+          <div class="container firstscreen-container">
+            <div class="firstscreen-info">
+              <a class="firstscreen-info__heading" href="#">
+                <h1 class="firstscreen-info__heading-head">
+                  Organic Fruit & Vegetables
+                </h1>
+              </a>
+              <p class="firstscreen-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                galley...
+              </p>
+            </div>
+            <div class="order-btn">
+              <a class="order-btn__link" href="#">
+                <div class="order-btn-tx">
+                  <span>Order Now</span>
+                </div>
+                <button class="order-btn__btn">
+                  <img
+                    class="order-btn__btn__img"
+                    src="./assets/images/arrow-right.svg"
+                    alt="button"
+                  />
+                </button>
+              </a>
+            </div>
+            <div class="firstscreen-about">
+              <div class="firstscreen-media"></div>
+              <div class="firstscreen-counter">
+                <div class="counter-part">
+                  <div class="counter-part-media">
+                    <img
+                      class="counter-part__icon"
+                      src="./assets/images/counter-part1.svg"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="counter-part-counter">
+                    <div class="counter">
+                      <span>300k</span>
+                    </div>
+                    <span>User Order</span>
+                  </div>
+                </div>
+
+                <div class="counter-part">
+                  <div class="counter-part-media">
+                    <img
+                      class="counter-part__icon"
+                      src="./assets/images/counter-part2.svg"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="counter-part-counter">
+                    <div class="counter">
+                      <span>20k</span>
+                    </div>
+                    <span>Reviews(4.8)</span>
+                  </div>
+                </div>
+
+                <div class="counter-part">
+                  <div class="counter-part-media">
+                    <img
+                      class="counter-part__icon"
+                      src="./assets/images/counter-part3.svg"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="counter-part-counter">
+                    <div class="counter">
+                      <span>300</span>
+                    </div>
+                    <span>Items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      @include('partials/footer.html')
+    </div>
+
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
