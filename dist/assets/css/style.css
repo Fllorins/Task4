@@ -1,10 +1,10 @@
-.footer__head, .order-btn-tx {
+.footer__head, .explor-btn-tx, .order-btn-tx {
     font-family: "DM Sans";
     font-weight: 500;
     color: #222222;
 }
 
-.firstscreen-info__heading {
+.download-info__heading, .explor-info__heading, .bestservise-info__heading, .firstscreen-info__heading {
     font-family: "Rosario";
     font-style: normal;
     font-weight: 700;
@@ -20,7 +20,7 @@ html {
 *,
 *::after,
 *::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -302,7 +302,6 @@ body {
 }
 
 .firstscreen-container {
-    z-index: -1;
     padding: 90px 0 50px 0;
 }
 
@@ -405,13 +404,255 @@ body {
     width: 95px;
 }
 
-.counter {
+.counter,
+.counter-ed {
     font-size: 48px;
     line-height: 48px;
     text-align: center;
     color: #000000;
 }
 
+/* bestservise */
+.bestservise-container {
+    padding: 140px 0;
+}
+
+.bestservise-info {
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.bestservise-info__heading-head {
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.bestservise-info-text {
+    max-width: 640px;
+    margin: 0;
+}
+
+.bestservise-counter {
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: repeat(3, 115px);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.bestservise-part {
+    background: #ffffff;
+    padding: 40px 60px;
+}
+
+.bestservise__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bestservise-list {
+    margin-bottom: 50px;
+}
+
+.bestservise-part {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bs-part {
+    background: #f3fbf8;
+}
+
+.bestservise-icons {
+    margin-right: 25px;
+}
+
+.bestservise-about-heading {
+    margin-bottom: 10px;
+}
+
+.bestservise-about-heading .bestservise-about-head {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #222222;
+}
+
+.bestservise-about-text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 280px;
+}
+
+.bestservise-media {
+    width: 600px;
+    height: 600px;
+}
+
+.bestservise-media .bestservise-media__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.bestservise-arrow__link {
+    cursor: pointer;
+}
+
+.bestservise-arrow img {
+    margin: 0 auto;
+    padding: 5px;
+}
+
+/* section explor */
+.explor {
+    height: 830px;
+    width: 100vw;
+    background: #f3fbf8;
+}
+
+.explor-container {
+    padding: 90px 15px 143px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.explor-media {
+    flex: none;
+    width: 600px;
+    height: 600px;
+    margin-right: 50px;
+}
+
+.explor-media__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.explor-info {
+    text-align: start;
+    margin-top: 50px;
+}
+
+.explor-info__heading-head {
+    margin-bottom: 20px;
+    color: #222222;
+}
+
+.explor-info-text {
+    max-width: 575px;
+    margin-bottom: 50px;
+}
+
+.explor-btn {
+    text-align: start;
+    display: block;
+}
+
+.explor-btn__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.explor-btn-tx {
+    margin-right: 20px;
+}
+
+.explor-btn__btn {
+    width: 64px;
+    height: 64px;
+    padding: 32px 16px;
+    background: #09a66d;
+    border: 1px solid #09a66d;
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+
+.explor-btn__btn:hover {
+    background: #08915f;
+}
+
+.explor-btn__btn:active {
+    background: #0bce87;
+}
+
+.explor-btn__btn__img {
+    margin-top: -7px;
+}
+
+/* download */
+.download-container {
+    padding: 90px 15px 143px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-media {
+    flex: none;
+    width: 265px;
+    height: 500px;
+    margin-right: 110px;
+}
+
+.download-media__img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.download-info__btn {
+    padding: 11px 25px;
+    background: #f3fbf8;
+    border-radius: 50px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.download-info {
+    text-align: start;
+}
+
+.download-info__heading-head {
+    margin-bottom: 20px;
+    color: #222222;
+    max-width: 660px;
+}
+
+.download-info-text {
+    max-width: 575px;
+    margin-bottom: 25px;
+}
+
+.download-info-icons {
+    display: flex;
+    align-items: center;
+}
+
+.download-info-icons__link {
+    padding: 0 5px;
+}
+
+.download-info-icons__part {
+    margin-right: 25px;
+}
+
+/* 
+
+.download-info-icons__part {
+}
+.download-info-icons__link {
+}
+.download-info-icons__icon {
+} */
 .footer {
     background: #fcfefd;
 }
