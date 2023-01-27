@@ -17,6 +17,7 @@ const fileInclude = require('gulp-file-include');
 const del = require('del');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
+const jquery = require('jquery');
 
 const srcPath = 'src/';
 const distPath = 'dist/';
