@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Organic Fruit</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link
       rel="stylesheet"
@@ -21,6 +25,10 @@
       type="text/css"
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
 
@@ -28,6 +36,9 @@
     <div class="wrapper">
       @include('partials/header.html')
       <main class="main">
+        <div class="parallax">
+          <div class="parallax-media" data-speed="60"></div>
+        </div>
         <section class="firstscreen">
           <div class="container firstscreen-container">
             <div class="firstscreen-info">
@@ -114,7 +125,7 @@
           </div>
         </section>
 
-        <section class="bestservise">
+        <section class="bestservise" id="about">
           <div class="container bestservise-container">
             <div class="bestservise-info">
               <a class="bestservise-info__heading" href="#!">
@@ -208,12 +219,20 @@
 
                 <div class="bestservise-arrow">
                   <a class="bestservise-arrow__link" href="#!">
-                    <img src="./assets/images/arrow-down.svg" alt="button" />
+                    <img
+                      class="bestservise-arrow__link-img"
+                      src="./assets/images/arrow-down.svg"
+                      alt="button"
+                    />
                   </a>
                 </div>
               </div>
 
               <div class="bestservise-media">
+                <div class="bestservise-media-curl">
+                  <img src="./assets/images/curl.png" alt="" />
+                </div>
+
                 <img
                   class="bestservise-media__img"
                   src="./assets/images/bestmen.png"
@@ -224,7 +243,7 @@
           </div>
         </section>
 
-        <section class="explor">
+        <section class="explor" id="menu">
           <div class="container explor-container">
             <div class="explor-media">
               <img
@@ -260,11 +279,16 @@
                   </button>
                 </a>
               </div>
+              <div class="explor-leaf">
+                <div class="parallax">
+                  <div class="parallax-media" data-speed="60"></div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section class="download">
+        <section class="download" id="service">
           <div class="container download-container">
             <div class="download-media">
               <img
@@ -316,25 +340,27 @@
 
         <section class="customers">
           <div class="container customers-container">
-            <div class="customers-info">
-              <a class="customers-info__heading" href="#!">
-                <h1 class="customers-info__heading-head">
-                  What Our Customers About Us saying
-                </h1>
-              </a>
-              <p class="customers-info-text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularis
-              </p>
-            </div>
             <div class="customers-sliders">
               <div class="customers-sliders__item">
                 <div class="customers-slider-about">
+                  <div class="customers-info">
+                    <div class="customers-info__headline">
+                      <a class="customers-info__heading" href="#!">
+                        <h1 class="customers-info__heading-head">
+                          What Our Customers About Us saying
+                        </h1>
+                      </a>
+                    </div>
+                    <p class="customers-info-text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularis
+                    </p>
+                  </div>
                   <div class="slider-about-heading">
                     <a href="#!"
                       ><h4 class="slider-about__head">Ahmed Hridoy</h4>
@@ -435,6 +461,24 @@
 
               <div class="customers-sliders__item">
                 <div class="customers-slider-about">
+                  <div class="customers-info">
+                    <div class="customers-info__headline">
+                      <a class="customers-info__heading" href="#!">
+                        <h1 class="customers-info__heading-head">
+                          What Our Customers About Us saying
+                        </h1>
+                      </a>
+                    </div>
+                    <p class="customers-info-text">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book. It has survived not only five
+                      centuries, but also the leap into electronic typesetting,
+                      remaining essentially unchanged. It was popularis
+                    </p>
+                  </div>
                   <div class="slider-about-heading">
                     <a href="#!"
                       ><h4 class="slider-about__head">Ahmed Hridoy</h4>
@@ -483,12 +527,52 @@
                 </div>
 
                 <div class="slider-media">
-                  <div class="slider-media-star">
-                    <img
-                      class="slider-media__star__img"
-                      src="./assets/images/star_img.jpg"
-                      alt="star"
-                    />
+                  <div class="slider-media-group">
+                    <div class="rating">
+                      <div class="rating__body">
+                        <div class="rating__active"></div>
+                        <div class="rating__items">
+                          <input
+                            class="rating__item"
+                            type="radio"
+                            name="rating"
+                            value="1"
+                          />
+                          <input
+                            class="rating__item"
+                            type="radio"
+                            name="rating"
+                            value="2"
+                          />
+                          <input
+                            class="rating__item"
+                            type="radio"
+                            name="rating"
+                            value="3"
+                          />
+                          <input
+                            class="rating__item"
+                            type="radio"
+                            name="rating"
+                            value="4"
+                          />
+                          <input
+                            class="rating__item"
+                            type="radio"
+                            name="rating"
+                            value="5"
+                          />
+                        </div>
+                      </div>
+                      <div class="rating__value">4.5</div>
+                    </div>
+                    <a href="#!"
+                      ><img
+                        class="slider-media-group__img"
+                        src="./assets/images/group-star.jpg"
+                        alt="star"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>

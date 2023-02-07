@@ -1,0 +1,340 @@
+@media (max-width: 1500px) {
+  .parallax {
+    width: 400px;
+  }
+  .explor-leaf .parallax {
+    &-media {
+      background-size: 100%;
+    }
+  }
+}
+@media (max-width: 1380px) {
+  .explor-leaf .parallax {
+    width: 350px;
+    height: 350px;
+    left: 0;
+    &-media {
+      background-size: 100%;
+    }
+  }
+}
+@media (max-width: 1212px) {
+  .bestservise-media {
+    width: 450px;
+    height: 450px;
+  }
+  .footer__inner {
+    gap: 30px;
+    grid-template-columns: 315px 1fr 1fr 1fr;
+  }
+  .footer-blog__link {
+    white-space: nowrap;
+  }
+  .slider-media {
+    background-size: 100%;
+  }
+  .customers-info__heading-head {
+    font-size: 66px;
+    line-height: 80px;
+  }
+  .explor-leaf .parallax,
+  .parallax {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 1140px) {
+  .customers-sliders__item {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .slick-initialized .slick-slide {
+    align-items: center;
+  }
+  .customers-info {
+    text-align: center;
+  }
+  .content-arrows {
+    position: unset;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .explor-info__heading-head {
+    font-size: 66px;
+    line-height: 80px;
+  }
+  .explor-media {
+    width: 500px;
+    height: 500px;
+  }
+}
+@media (max-width: 1055px) {
+  .header .header__inner {
+    padding: 0;
+  }
+  .menu__item {
+    margin-right: 20px;
+  }
+  .firstscreen-container,
+  .download-container {
+    padding: 50px 15px 50px;
+  }
+  .bestservise-container {
+    padding: 50px 50px;
+  }
+  .firstscreen-about .firstscreen-media {
+  }
+  .firstscreen-info__heading-head,
+  .bestservise-info__heading-head,
+  .download-info__heading-head,
+  .customers-info__heading-head,
+  .explor-info__heading-head {
+    font-size: 50px;
+  }
+  .counter,
+  .counter-ed {
+    font-size: 38px;
+  }
+  .firstscreen-counter {
+    grid-template-columns: 210px;
+  }
+  .counter-part {
+    padding: 5px 20px;
+  }
+  .counter,
+  .counter-ed {
+    font-size: 35px;
+  }
+  .order-btn__btn,
+  .explor-btn__btn {
+    width: 55px;
+    height: 55px;
+    padding: 20px 16px;
+  }
+  .order-btn__btn__img,
+  .explor-btn__btn__img {
+    margin-top: 0;
+  }
+  .bestservise-container {
+    padding: 50px 15px;
+  }
+  .bestservise-info {
+    text-align: center;
+  }
+  .bestservise-info-text {
+    margin: 0 auto;
+  }
+  .bestservise-about-text {
+    max-width: 245px;
+  }
+  .bestservise-part {
+    padding: 20px;
+  }
+
+  .download-media {
+    margin-right: 50px;
+  }
+  .download-info__heading-head,
+  .customers-info__heading-head {
+    line-height: 70px;
+  }
+  .explor-leaf {
+    display: none;
+  }
+}
+@media (max-width: 866px) {
+  @import './burger';
+  /* burger */
+  .header .header__inner {
+    margin: 20px 0;
+    justify-content: flex-end;
+  }
+  .logo {
+    margin-right: 55px;
+    width: 45px;
+    height: 45px;
+  }
+  .firstscreen-about {
+    flex-direction: column;
+    align-items: center;
+  }
+  .firstscreen-about .firstscreen-media {
+    background-size: 75% auto;
+  }
+  .firstscreen-counter {
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: 105px;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .counter-part-counter span {
+    white-space: nowrap;
+  }
+  .counter-part {
+    padding: 5px 10px;
+  }
+  .bestservise__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer__inner {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .logo-footer {
+    margin: 0;
+  }
+  .explor-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .explor-info {
+    text-align: center;
+  }
+  .explor-btn__link {
+    justify-content: center;
+  }
+  .explor-media {
+    margin-right: 0;
+  }
+  .parallax {
+    top: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .firstscreen-counter {
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(3, 105px);
+  }
+  .counter-part {
+    padding: 17px 33px;
+  }
+  .firstscreen-about .firstscreen-media {
+    background-size: 60% auto;
+  }
+  .firstscreen-info__heading {
+    line-height: 70px;
+    font-size: 40px;
+  }
+  .download-container {
+    flex-direction: column;
+  }
+  .download-media {
+    margin: 0 auto;
+  }
+  .download-info {
+    text-align: center;
+  }
+  .download-info-icons {
+    justify-content: center;
+  }
+  .download-info__heading-head,
+  .explor-info__heading-head {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .download-info-icons__part:last-child {
+    margin: 0;
+  }
+  .logos-footer__slogan {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .parallax {
+    display: none;
+  }
+}
+@media (max-width: 530px) {
+  .header .header__inner {
+    align-items: center;
+    margin: 5px 0;
+  }
+  .header__inner-btn {
+    align-items: flex-start;
+  }
+  .btn-registr {
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  .hamb {
+    top: 15px;
+    left: 0px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  .explor-info-text {
+    margin-bottom: 20px;
+  }
+  .explor-media {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .logo {
+    margin-right: 40px;
+  }
+  .firstscreen-about .firstscreen-media {
+    background-size: 45% auto;
+  }
+  .footer__inner {
+    grid-template-columns: 165px 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .footer-social-email {
+    font-size: 14px;
+  }
+  .footer-social-icons {
+    gap: 20px;
+  }
+  .slider-media-group {
+    margin-bottom: 50px;
+  }
+  .customers-info-text {
+    margin-bottom: 20px;
+  }
+  .slider-about-stars {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 410px) {
+  .btn-registr {
+    padding: 3px 10px;
+    font-size: 14px;
+  }
+  .header__inner-btn {
+    flex-direction: column-reverse;
+  }
+  .btn-registr {
+    margin-bottom: 10px;
+    margin-top: 3px;
+  }
+  .header-btns {
+    margin: 0 auto;
+  }
+  .header__btns-btn:not(:last-child) {
+    margin-right: 20px;
+  }
+  .logo {
+    margin-right: 50px;
+  }
+  .header .header__inner {
+    align-items: flex-start;
+  }
+  .hamb__field {
+    padding: 7px 20px;
+  }
+  .hamb {
+    top: 0px;
+    left: 0px;
+  }
+  .explor-media {
+    width: 340px;
+    height: 340px;
+  }
+}

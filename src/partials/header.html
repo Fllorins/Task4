@@ -2,6 +2,7 @@
   <div class="container header-container">
     <div class="header__inner">
       <div class="active-navbar">
+        <div class="popup" id="popup"></div>
         <nav class="navbar">
           <div class="hamb">
             <div class="hamb__field" id="hamb">
@@ -12,20 +13,19 @@
           </div>
           <ul class="menu" id="menu">
             <li class="menu__item">
-              <a class="menu__link" href="#!">About Us</a>
+              <a class="menu__link" href="#about">About Us</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#!">Service</a>
+              <a class="menu__link" href="#service">Service</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#!">Menu</a>
+              <a class="menu__link" href="#menu">Menu</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#!">Contact</a>
+              <a class="menu__link" href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
-        <div class="popup" id="popup"></div>
       </div>
 
       <div class="logo">
@@ -33,19 +33,20 @@
           ><img class="logo__media" src="./assets/images/logo.png" alt="logo"
         /></a>
       </div>
-
-      <div class="header-btns">
-        <div class="header__btns-btn">
-          <button class="btn btn-search">
-            <img src="./assets/images/search.svg" alt="search" />
-          </button>
+      <div class="header__inner-btn">
+        <div class="header-btns">
+          <div class="header__btns-btn">
+            <button class="btn btn-search">
+              <img src="./assets/images/search.svg" alt="search" />
+            </button>
+          </div>
+          <div class="header__btns-btn">
+            <button class="btn btn-basket">
+              <img src="./assets/images/basket.svg" alt="basket" />
+            </button>
+          </div>
         </div>
-        <div class="header__btns-btn">
-          <button class="btn btn-basket">
-            <img src="./assets/images/basket.svg" alt="basket" />
-          </button>
-        </div>
-        <div class="header__btns-registr ">
+        <div class="header__btns-registr">
           <button class="btn-registr">
             <span>Regestar Now</span>
           </button>

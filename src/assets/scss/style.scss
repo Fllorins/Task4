@@ -6,18 +6,41 @@
 
 @import './components/header';
 
+.parallax {
+  position: absolute;
+  left: 9px;
+  top: 110px;
+  width: 610px;
+  height: 410px;
+  overflow: visible;
+}
+.parallax-media {
+  position: absolute;
+  left: 47px;
+  top: 5px;
+  background: url('../../assets/images/leaf-parallax.png') center no-repeat;
+  width: 110%;
+  height: 110%;
+  background-size: cover;
+  z-index: 50;
+  overflow: hidden;
+}
 //firstscreen
 .firstscreen {
-  height: 850px;
+  position: relative;
   width: 100vw;
   background: $color-bg-salat;
+
+  overflow: hidden;
   &-container {
     padding: 90px 15px 50px 15px;
   }
 }
 .firstscreen-info {
+  position: relative;
   text-align: center;
   margin-bottom: 20px;
+  z-index: 1000;
   &__heading {
     @extend %title-font;
     &-head {
@@ -67,15 +90,9 @@
   justify-content: space-between;
   .firstscreen-media {
     content: '';
-    background: url('../../assets/images/vegetables-fruits-PhotoRoom.png-PhotoRoom.png');
-    background-size: cover;
-    background-blend-mode: darken;
-
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: darken;
-
-    background-position: center;
+    background: url('../../assets/images/vegetables-fruits-PhotoRoom.png-PhotoRoom.png')
+      center no-repeat;
+    background-size: 100%;
     width: 860px;
     height: 465px;
   }
@@ -116,7 +133,7 @@
 /* bestservise */
 
 .bestservise-container {
-  padding: 140px 15px;
+  padding: 140px 40px;
 }
 
 .bestservise-info {
@@ -164,9 +181,6 @@
   margin-right: 25px;
 }
 
-.bestservise-about {
-  // max-width: 280px;
-}
 .bestservise-about-heading {
   margin-bottom: 10px;
 
@@ -186,32 +200,47 @@
 .bestservise-media {
   width: 600px;
   height: 600px;
-
   .bestservise-media__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 1000;
+    position: relative;
   }
 }
 .bestservise-arrow__link {
   cursor: pointer;
+  &-img {
+    margin: 0 auto;
+  }
 }
-.bestservise-arrow img {
+.bestservise-arrow__img {
   margin: 0 auto;
   padding: 5px;
+  z-index: 500;
 }
-
+.bestservise-media-curl {
+}
+.bestservise-media-curl img {
+  width: 540px;
+  height: 930px;
+  position: absolute;
+  color: #ecffdc;
+  z-index: 2;
+}
 /* section explor */
 
 .explor {
-  height: 830px;
   width: 100vw;
+
   background: $color-bg-salat;
   &-container {
     padding: 90px 15px 143px 15px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    z-index: 2000;
+    overflow: hidden;
   }
 }
 .explor-media {
@@ -219,6 +248,7 @@
   width: 600px;
   height: 600px;
   margin-right: 50px;
+  overflow: hidden;
 }
 .explor-media__img {
   width: 100%;
@@ -245,6 +275,8 @@
 .explor-btn {
   text-align: start;
   display: block;
+  z-index: 1000;
+  position: relative;
 }
 .explor-btn__link {
   display: flex;
@@ -273,19 +305,32 @@
     margin-top: -7px;
   }
 }
+.explor-leaf {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+}
+.explor-leaf .parallax {
+  left: 123px;
+
+  top: -177px;
+  width: 400px;
+  height: 410px;
+}
 /* customers */
 .customers {
   &-container {
-    // height: 540px;
     padding: 90px 15px 143px 15px;
     position: relative;
   }
 }
 .customers-info {
-  position: absolute;
+  display: flex;
+  flex-direction: column;
   text-align: start;
   max-width: 650px;
-  z-index: 2050;
+  z-index: 2000;
+  background: #ffffff;
   &__heading {
     @extend %title-font;
     &-head {
@@ -313,9 +358,10 @@
 }
 
 .slider-media {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 500px;
-  background: url('../../assets/images/customers.jpg');
+  background: url('../../assets/images/customers.jpg') no-repeat;
   background-size: cover;
   display: flex;
   align-items: flex-end;
@@ -361,6 +407,7 @@
   }
 }
 /* rating stars */
+
 .rating {
   display: flex;
   align-items: flex-end;
@@ -412,14 +459,11 @@
   opacity: 0;
 }
 
-/* 
- */
-
 /* download */
 
 .download {
   &-container {
-    padding: 90px 15px 143px 15px;
+    padding: 90px 50px 143px 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,3 +516,23 @@
 }
 
 @import './components/footer';
+.active-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 500;
+  text-align: center;
+}
+.menu-toggles {
+  visibility: hidden;
+  position: absolute;
+}
+.hamb {
+  display: none;
+}
+.popup {
+  display: none;
+}
+
+@import './components/media';

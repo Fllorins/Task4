@@ -1,3 +1,6 @@
+.active-navbar {
+  align-items: flex-start;
+}
 .navbar {
   left: 0;
   top: 0;
@@ -10,7 +13,7 @@
   flex-direction: column;
   visibility: hidden;
   top: 80px;
-  left: 90px;
+  right: 90px;
   width: 100%;
   height: 90%;
   margin: -90px;
@@ -25,9 +28,9 @@
   display: flex;
   align-items: center;
   position: absolute;
-  top: 45px;
-  right: 45px;
-  z-index: 500;
+  left: 0;
+  top: 30px;
+  z-index: 3000;
 }
 
 .hamb__field {
@@ -39,7 +42,7 @@
   width: 30px;
   height: 3px;
   margin: 6px auto;
-  background: var(--basic);
+  background: $color-title;
   transition: 0.2s;
 }
 .menu__item {
@@ -60,8 +63,8 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #fff;
-  z-index: 200;
+  background: $color-bg-salat;
+  z-index: 2500;
   transition: 0.3s;
 }
 .popup.open {

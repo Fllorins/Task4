@@ -18,6 +18,7 @@ const del = require('del');
 const notify = require('gulp-notify');
 const browserSync = require('browser-sync').create();
 const jquery = require('jquery');
+const ghPages = require('gulp-gh-pages');
 
 const srcPath = 'src/';
 const distPath = 'dist/';
@@ -61,6 +62,9 @@ function serve() {
     notify: false,
   });
 }
+gulp.task('deploy', function () {
+  return gulp.src('./build/**/*').pipe(ghPages());
+});
 
 function html() {
   return src(path.src.html, { base: srcPath })
@@ -132,7 +136,7 @@ function images() {
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
         imagemin.mozjpeg({ quality: 80, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.optipng({ optimizationLevel: 2 }),
         imagemin.svgo({
           plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
         }),
@@ -146,7 +150,6 @@ function fonts() {
     .pipe(dest(path.build.fonts))
     .pipe(browserSync.reload({ stream: true }));
 }
-
 function clean() {
   return del(path.clean);
 }
