@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Fruit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+  <div class="container header-container">
+    <div class="header__inner">
+      <div class="active-navbar">
+        <div class="popup" id="popup"></div>
+        <nav class="navbar">
+          <div class="hamb">
+            <div class="hamb__field" id="hamb">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+          <ul class="menu" id="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#about">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#service">Service</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#menu">Menu</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="logo">
+        <a href="#" class="logo__link"
+          ><img class="logo__media" src="./assets/images/logo.png" alt="logo"
+        /></a>
+      </div>
+      <div class="header__inner-btn">
+        <div class="header-btns">
+          <div class="header__btns-btn">
+            <button class="btn btn-search">
+              <img src="./assets/images/search.svg" alt="search" />
+            </button>
+          </div>
+          <div class="header__btns-btn">
+            <button class="btn btn-basket">
+              <img src="./assets/images/basket.svg" alt="basket" />
+            </button>
+          </div>
+        </div>
+        <div class="header__btns-registr">
+          <button class="btn-registr">
+            <span>Regestar Now</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="parallax">
+          <div class="parallax-media" data-speed="60"></div>
+        </div>
+        <section class="firstscreen">
+          <div class="container firstscreen-container">
+            <div class="firstscreen-info">
+              <a class="firstscreen-info__heading" href="#!">
+                <h1 class="firstscreen-info__heading-head">
+                  Organic Fruit & Vegetables
+                </h1>
+              </a>
+              <p class="firstscreen-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                galley...
+              </p>
+            </div>
+            <div class="order-btn">
+              <a class="order-btn__link" href="#!">
+                <div class="order-btn-tx">
+                  <span>Order Now</span>
+                </div>
+                <button class="order-btn__btn">
+                  <img
+                    class="order-btn__btn__img"
+                    src="./assets/images/arrow-right.svg"
+                    alt="button"
+                  />
+                </button>
+              </a>
+            </div>
+            <div class="firstscreen-about">
+              <div class="firstscreen-media"></div>
+              <div class="firstscreen-counter">
+                <div class="counter-part" id="counter-part">
+                  <div class="counter-part-media">
+                    <img
+                      class="counter-part__icon"
+                      src="./assets/images/counter-part1.svg"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="counter-part-counter">
+                    <div>
+                      <span class="counter" data-target="30">1</span>
+                      <span class="counter-ed">K</span>
+                    </div>
+                    <span>User Order</span>
+                  </div>
+                </div>
+
+                <div class="counter-part">
+                  <div class="counter-part-media">
+                    <img
+                      class="counter-part__icon"
+                      src="./assets/images/counter-part2.svg"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="counter-part-counter">
+                    <div>
+                      <span class="counter" data-target="20">1</span>
+                      <span class="counter-ed">K</span>
+                    </div>
+                    <span>Reviews(4.8)</span>
+                  </div>
+                </div>
+
+                <div class="counter-part">
+                  <div class="counter-part-media">
+                    <img
+                      class="counter-part__icon"
+                      src="./assets/images/counter-part3.svg"
+                      alt="icon"
+                    />
+                  </div>
+                  <div class="counter-part-counter">
+                    <div>
+                      <span class="counter" data-target="300">300</span>
+                    </div>
+                    <span>Items</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bestservise" id="about">
+          <div class="container bestservise-container">
+            <div class="bestservise-info">
+              <a class="bestservise-info__heading" href="#!">
+                <h1 class="bestservise-info__heading-head">
+                  Why We Aer The Best?
+                </h1>
+              </a>
+              <p class="bestservise-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a
+                galley...
+              </p>
+            </div>
+            <div class="bestservise__inner">
+              <div class="bestservise__inner-list">
+                <div class="bestservise-list">
+                  <div class="bestservise-part">
+                    <div class="bestservise-icons">
+                      <a href="#!">
+                        <img
+                          class="bestservise__icon"
+                          src="./assets/images/delivery.svg"
+                          alt="icon"
+                        />
+                      </a>
+                    </div>
+                    <div class="bestservise-about">
+                      <div class="bestservise-about-heading">
+                        <a href="#!"
+                          ><h3 class="bestservise-about-head">
+                            Fasted delivery Service
+                          </h3>
+                        </a>
+                      </div>
+                      <p class="bestservise-about-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="bestservise-part bs-part">
+                    <div class="bestservise-icons">
+                      <a href="#!">
+                        <img
+                          class="bestservise__icon"
+                          src="./assets/images/order.svg"
+                          alt="icon"
+                        />
+                      </a>
+                    </div>
+                    <div class="bestservise-about">
+                      <div class="bestservise-about-heading">
+                        <a href="#!">
+                          <h3 class="bestservise-about-head">
+                            Online order Service
+                          </h3>
+                        </a>
+                      </div>
+                      <p class="bestservise-about-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="bestservise-part">
+                    <div class="bestservise-icons">
+                      <a href="#!">
+                        <img
+                          class="bestservise__icon"
+                          src="./assets/images/time.svg"
+                          alt="icon"
+                        />
+                      </a>
+                    </div>
+                    <div class="bestservise-about">
+                      <div class="bestservise-about-heading">
+                        <a href="#!">
+                          <h3 class="bestservise-about-head">24/8 Service</h3>
+                        </a>
+                      </div>
+                      <p class="bestservise-about-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bestservise-arrow">
+                  <a class="bestservise-arrow__link" href="#!">
+                    <img
+                      class="bestservise-arrow__link-img"
+                      src="./assets/images/arrow-down.svg"
+                      alt="button"
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="bestservise-media">
+                <div class="bestservise-media-curl"></div>
+
+                <img
+                  class="bestservise-media__img"
+                  src="./assets/images/bestmen.png"
+                  alt="bestmen"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="explor" id="menu">
+          <div class="container explor-container">
+            <div class="explor-media">
+              <img
+                class="explor-media__img"
+                src="./assets/images/explorcocumber.jpg"
+                alt="explor"
+              />
+            </div>
+
+            <div class="explor-info">
+              <a class="explor-info__heading" href="#!">
+                <h1 class="explor-info__heading-head">
+                  Explor Our Special Items
+                </h1>
+              </a>
+              <p class="explor-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer...
+              </p>
+
+              <div class="explor-btn">
+                <a class="explor-btn__link" href="#!">
+                  <div class="explor-btn-tx">
+                    <span>Explor Now</span>
+                  </div>
+                  <button class="explor-btn__btn">
+                    <img
+                      class="explor-btn__btn__img"
+                      src="./assets/images/arrow-right.svg"
+                      alt="button"
+                    />
+                  </button>
+                </a>
+              </div>
+              <div class="explor-leaf">
+                <div class="parallax">
+                  <div class="parallax-media" data-speed="60"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="download" id="service">
+          <div class="container download-container">
+            <div class="download-media">
+              <img
+                class="download-media__img"
+                src="./assets/images/iphone.jpg"
+                alt="iphone"
+              />
+            </div>
+
+            <div class="download-info">
+              <button class="download-info__btn">
+                <span>Download App</span>
+              </button>
+
+              <a class="download-info__heading" href="#!">
+                <h1 class="download-info__heading-head">
+                  Simple Way To Order Your Organic Fruit
+                </h1>
+              </a>
+              <p class="download-info-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer...
+              </p>
+
+              <div class="download-info-icons">
+                <div class="download-info-icons__part">
+                  <a href="#!" class="download-info-icons__link">
+                    <img
+                      class="download-info-icons__icon"
+                      src="./assets/images/appstore.svg"
+                      alt="appstore"
+                    />
+                  </a>
+                </div>
+                <div class="download-info-icons__part">
+                  <a href="#!" class="download-info-icons__link">
+                    <img
+                      class="download-info-icons__icon"
+                      src="./assets/images/googleplay.svg"
+                      alt="googleplay"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="customers">
+          <div class="container customers-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="customers-sliders__item swiper-slide">
+                  <div class="customers-slider-about">
+                    <div class="customers-info">
+                      <div class="customers-info__headline">
+                        <a class="customers-info__heading" href="#!">
+                          <h1 class="customers-info__heading-head">
+                            What Our Customers About Us saying
+                          </h1>
+                        </a>
+                      </div>
+                      <p class="customers-info-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularis
+                      </p>
+                    </div>
+                    <div class="slider-about-heading">
+                      <a href="#!"
+                        ><h4 class="slider-about__head">Ahmed Hridoy</h4>
+                      </a>
+                    </div>
+                    <div class="slider-about-stars">
+                      <div class="rating rating_set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="1"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="2"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="3"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="4"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="5"
+                            />
+                          </div>
+                        </div>
+                        <div class="rating__value">4.5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slider-media">
+                    <div class="slider-media-group">
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="1"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="2"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="3"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="4"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="5"
+                            />
+                          </div>
+                        </div>
+                        <div class="rating__value">4.5</div>
+                      </div>
+                      <a href="#!"
+                        ><img
+                          class="slider-media-group__img"
+                          src="./assets/images/group-star.jpg"
+                          alt="star"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="customers-sliders__item swiper-slide">
+                  <div class="customers-slider-about">
+                    <div class="customers-info">
+                      <div class="customers-info__headline">
+                        <a class="customers-info__heading" href="#!">
+                          <h1 class="customers-info__heading-head">
+                            What Our Customers About Us saying
+                          </h1>
+                        </a>
+                      </div>
+                      <p class="customers-info-text">
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into
+                        electronic typesetting, remaining essentially unchanged.
+                        It was popularis
+                      </p>
+                    </div>
+                    <div class="slider-about-heading">
+                      <a href="#!"
+                        ><h4 class="slider-about__head">Ahmed Hridoy</h4>
+                      </a>
+                    </div>
+                    <div class="slider-about-stars">
+                      <div class="rating rating_set">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="1"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="2"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="3"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="4"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="5"
+                            />
+                          </div>
+                        </div>
+                        <div class="rating__value">4.5</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slider-media">
+                    <div class="slider-media-group">
+                      <div class="rating">
+                        <div class="rating__body">
+                          <div class="rating__active"></div>
+                          <div class="rating__items">
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="1"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="2"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="3"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="4"
+                            />
+                            <input
+                              class="rating__item"
+                              type="radio"
+                              name="rating"
+                              value="5"
+                            />
+                          </div>
+                        </div>
+                        <div class="rating__value">4.5</div>
+                      </div>
+                      <a href="#!"
+                        ><img
+                          class="slider-media-group__img"
+                          src="./assets/images/group-star.jpg"
+                          alt="star"
+                        />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-buttons">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer-logo">
+        <div class="logo-footer">
+          <a href="#!"
+            ><img
+              src="./assets/images/logo.png"
+              alt="logo"
+              class="logo-footer-img"
+          /></a>
+        </div>
+        <p class="logos-footer__slogan">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer...
+        </p>
+      </div>
+
+      <div class="navigation footer-blog">
+        <div class="footer__head">
+          <h5>Navigation</h5>
+        </div>
+        <ul class="footer-blog__list">
+          <li class="footer-blog__item">
+            <a href="#!" class="footer-blog__link">About Us</a>
+          </li>
+          <li class="footer-blog__item">
+            <a href="#!" class="footer-blog__link">Service</a>
+          </li>
+          <li class="footer-blog__item">
+            <a href="#!" class="footer-blog__link">Menu</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="resources footer-blog">
+        <div class="footer__head">
+          <h5>Products</h5>
+        </div>
+        <ul class="footer-blog__list">
+          <li class="footer-blog__item">
+            <a href="#!" class="footer-blog__link">Reviews</a>
+          </li>
+          <li class="footer-blog__item">
+            <a href="#!" class="footer-blog__link">Blog</a>
+          </li>
+          <li class="footer-blog__item">
+            <a href="#!" class="footer-blog__link">Update News</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="contact footer__blog" id="contact">
+        <div class="footer__head">
+          <h5>Contact Us</h5>
+        </div>
+        <div class="footer-social-inner">
+          <a class="footer-social-email" href="mailto:oyasim@email.com"
+            >Email: oyasim@email.com</a
+          >
+          <div class="footer-social-icons">
+            <div class="footer-social-icon">
+              <a href="#!"
+                ><img
+                  src="./assets/images/facebook.svg"
+                  alt="facebook"
+                  class="social-icon__img"
+              /></a>
+            </div>
+
+            <div class="footer-social-icon">
+              <a href="#!"
+                ><img
+                  src="./assets/images/twitter.svg"
+                  alt="twitter"
+                  class="social-icon__img"
+              /></a>
+            </div>
+
+            <div class="footer-social-icon">
+              <a href="#!"
+                ><img
+                  src="./assets/images/instagram.svg"
+                  alt="instagram"
+                  class="social-icon__img"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.min.js"></script>
+  </body>
+</html>
